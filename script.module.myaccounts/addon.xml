@@ -1,0 +1,24 @@
+<addon id="script.module.myaccounts" version="2.9.8" name="My Accounts" provider-name="Venom, Fen">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" version="2.19.1" />
+    </requires>
+    <extension point="xbmc.python.script" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="lib/service.py" start="startup" />
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <description lang="en">Provider for your meta and debrid account information.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <news>INFO: For latest changes see View Changelog within Options of add-on settings.</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
